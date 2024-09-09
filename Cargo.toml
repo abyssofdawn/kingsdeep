@@ -1,0 +1,17 @@
+[package]
+name = "kingsdeep"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "kingsdeep"
+path = "src/main.rs"
+
+[lib]
+name = "kingsdeep"
+path = "src/lib.rs"
+
+[dependencies]
+bracket-lib = "0.8.7"
+bracket-terminal = "0.8.7"
+mlua = { version = "0.9.9", features = ["lua54", "macros", "vendored"] }
